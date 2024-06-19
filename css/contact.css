@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1E202B;
+}
+.home-link{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    color: #BFC1C8;
+    transition: all 0.3s;
+}
+.home-link:hover{
+    text-decoration: underline;
+
+}
+.links{
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+}
+.links i{
+    color: #BFC1C8;
+
+}
+.info{
+    width: 100%;
+    height: 320px;
+    background-color: #262936;
+}
+.row .location ,.contact-info a{
+    color: #BFC1C8;
+    font-size: 14px;
+    font-weight: 300;
+}
+.row h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+.row p{
+    font-size: 14px;
+    color: #BFC1C8;
+    font-weight: 300;
+}
+.co-i{
+    color: #17C1E0;
+}
+.p-3 {
+    padding: 0.8rem !important;
+}
+.border{
+    border-color: rgba(255, 255, 255 ,0.2) !important;
+}
+.form-control{
+    transition: all 0.3s;
+}
+.form-control:focus ,.form-control:hover{
+    border-color: #009AD8 !important;
+
+}
+textarea{
+    color: rgba(255, 255, 255,0.3) !important;
+  height: 150px;
+}
+textarea.form-control{
+    font-size: 14px;
+}
+.btn-submit{
+    background-color: rgb(0, 154, 216);
+    padding: 7px 20px;
+}
+

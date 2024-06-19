@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <!-- =========Nav bar Start========= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav py-6">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="d-flex align-items-center">
+                    <div class="me-3"> <img src="./images/logo.png" alt="logo Photo"></div>
+                           
+                    <div class="logo-name">
+                        <h1 class="fs-6 mnb-1">Weather</h1>
+                        <small class="p-s fs-10">tagline goes here</small>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item contact">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+     <!-- =========Nav bar End========= -->
+       <!-- =========Header Start========= -->
+    <header class="home pt-6 pb-5">
+        <div class="container">
+            <form class="form position-relative">
+                <input id="city" class="form-control text-white" type="search" placeholder="Find Your location..." name="location">
+                <button id="find" class="find-btn btn btn-blue">Find</button>
+            </form>
+            <div class="d-flex justify-content-center">
+                 <a id="locationResult" class="location-result text-decoration-none mt-3 fs-5 d-inline-block" target="_blank"></a>
+            </div>
+           
+            <div class="forecast-container pt-6 text-white ">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="today">
+                            <div class="forecast-header d-flex justify-content-between p-2 bg-header-1">
+                                <div class="day"></div>
+                                <div class="date"></div>
+                            </div>
+                            <div class="forecast-body p-3 bg-bluee">
+                                <div class="city-name py-3"></div>
+                                <div class="temp-deg d-inline-block"></div>
+                                <img  class="sun today-icon" alt="sun photo">
+                                <div class="weather-condition pb-3"></div>
+                                <div class="pb-3">
+                                    <span>
+                                        <img src="./images/icon-umberella.png" alt="icon-umberella">
+                                        20%
+                                    </span>
+                                    <span class="wind-speed">
+                                        
+                                    </span>
+                                    <span class="wind-dir">
+                                        <img src="./images/icon-compass.png" alt="icon-compass">
+                                        East
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tomorrow bg-bluee-2 h-100">
+                            <div class="forecast-header d-flex justify-content-center p-2 bg-header-2">
+                                <div class="day"></div>
+                            </div>
+                            <div class="forecast-body d-flex flex-column align-items-center justify-content-center h-75 py-4 py-lg-0">
+                                <img  class="sun-2 pb-4 pt-5 pt-lg-0 tom-icon" alt="sun photo">
+                                <div class="max-temp temp-deg-2"></div>
+                                <div class="min-temp sec-temp-deg mb-4"> </div>
+                                <div class="weather-condition"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="after-tomorrow bg-bluee h-100">
+                            <div class="forecast-header d-flex justify-content-center p-2 bg-header-1">
+                                <div class="day"></div>
+                            </div>
+                            <div class="forecast-body d-flex flex-column align-items-center justify-content-center h-75 py-4 py-lg-0">
+                                <img  class="sun-2 pb-4 pt-5 pt-lg-0 aft-tom-icon" alt="sun photo">
+                                <div class="max-temp temp-deg-2"></div>
+                                <div class="min-temp sec-temp-deg mb-4"></div>
+                                <div class="weather-condition"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+     <!-- =========Header End========= -->
+
+
+       <!-- =========Footer Start========= -->
+    <footer class="bg-bluee-2 py-5">
+       <div class="container">
+        <div class="row align-items-start justify-content-start">
+            <div class="col-lg-8">
+                <div class="inner">
+                    <form class="form d-flex mb-4 position-relative">
+                        <input class="form-control col-12 text-white" type="email" placeholder="Enter your email to subsribe..." name="email">
+                        <button class="subscribe-btn btn btn-blue">Subscribe</button>
+                    </form>
+                   
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="inner d-flex justify-content-lg-center pb-2 pb-lg-0">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+          
+        </div>
+        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+     
+
+       </div>
+    </footer>
+     <!-- =========Footer End========= -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

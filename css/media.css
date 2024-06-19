@@ -1,0 +1,78 @@
+@media (min-width: 992px) {
+    /* =============Nav bar Start=============== */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        color: white;
+        font-size: 14px;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #009ad8;
+        border-color: #009ad8;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #009ad8;
+        border-color: #009ad8;
+    }
+
+    .navbar-collapse {
+        background-color: initial;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .nav-item {
+        border-bottom: none;
+    }
+
+    /* =============Nav bar End=============== */
+
+    /* =============Header start Index Page=============== */
+
+    .today .forecast-header {
+        border-top-right-radius: 0;
+
+        border-top-left-radius: 0.5rem;
+    }
+
+    .today .forecast-body {
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .after-tomorrow .forecast-header {
+        border-top-right-radius: 0.5rem;
+    }
+
+    .after-tomorrow {
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius:0 ;
+
+    }
+    /* =============Header End Index Page=============== */
+
+    /* =================contact Page================== */
+    /* =================contact Page================== */
+    
+    .info{
+        width: 80%;
+    }
+    .w-48{
+        width: 48%;
+    }
+    /* =================contact Page================== */
+
+}
