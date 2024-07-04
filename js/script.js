@@ -142,8 +142,12 @@ function success(position) {
     let { coords } = position;
     locationResult.innerHTML = `See your location on a map <i class="fa-solid fa-map-location-dot fs-4 text-danger"></i>`;
     locationResult.href = `https://www.openstreetmap.org?mlat=${coords.latitude}&mlon=${coords.longitude}`;
+    forecast(`${coords.latitude},${coords.longitude}`);
+
+}
+function error() {
+    forecast('paris');
 }
 
-
-    navigator.geolocation.getCurrentPosition(success);
+    navigator.geolocation.getCurrentPosition(success,error);
 
